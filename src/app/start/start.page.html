@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+      
+    <ion-title>start</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h2> Existing rentals </h2><br>
+ 
+    <ion-button (click)="navToCreate()">Create new</ion-button>
+    
+    <ion-button (click)="navToView()">View details</ion-button>
+    <ion-button (click)="navToProfile()">View Profile</ion-button>
+<h2> Properties </h2>
+<!-- <ion-card *ngFor= "let listing of listings">
+{{listing.title}}
+</ion-card> -->
+
+  <ion-card *ngFor = "let property of properties" (click)=viewProperty(property)>
+    <img class= "image" src = "{{property.imgURL}}"  />
+    <ion-card-header>
+      <ion-card-title>{{property.title}}</ion-card-title>
+      <ion-card-subtitle>{{property.location}}</ion-card-subtitle>
+      <ion-card-subtitle>${{property.pricePerNight}}</ion-card-subtitle>
+    </ion-card-header> 
+  </ion-card>
+
+
+</ion-content>

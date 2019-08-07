@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>propertyInfo</ion-title>
+    <ion-button (click)=back()>Back to Listings</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    
+
+    <h1>  {{property.title}} </h1><br>
+    <img class= "image" src = "{{property.imgURL}}"  />
+    <h3>Location: {{property.location}}</h3>
+    <h3>${{property.pricePerNight}} per night</h3><br>
+    <hr>
+    <h5>Description: {{property.description}}</h5>
+
+      <ion-button (click)=viewBookings()>view Bookings</ion-button>
+      <ion-button (click)="navToUpdate()">Update rental</ion-button>
+      <ion-button (click)="delete()">Delete rental</ion-button>
+
+</ion-content>

@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="explore"></ion-back-button>
+          </ion-buttons>
+      <ion-title>profile</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+      <ion-avatar>
+          <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+        </ion-avatar>
+        
+          <h1>My name is {{user.firstName}} {{user.lastName}}</h1>
+          <hr>
+          <ul>
+            <li>Email: {{user.email}}</li>
+            <li>Phone: {{user.cellPhone}}</li>
+          </ul>
+       
+        
+  </ion-content>
+  

@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>create</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <input type="text" placeholder="Title" [(ngModel)]= "title" name="type" required><br>
+    <input type="text" placeholder="description" [(ngModel)]= "description" name="description" required><br>
+    <input type="text" placeholder="Location (city)" [(ngModel)]= "location" name="loc" required>
+    <input type="text" placeholder="Price per night" [(ngModel)]= "pricePerNight" name="pricePerNight" required>
+    <input type="text" placeholder="Image URL" [(ngModel)]= "imgURL" name="img" required>
+    
+        <ion-button (click)="submit()">Post rental</ion-button>
+</ion-content>

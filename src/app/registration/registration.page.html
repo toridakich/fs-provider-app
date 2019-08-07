@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="home"></ion-back-button>
+        </ion-buttons>
+    <ion-title>registration</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form class="box">
+    <ion-input type="text" placeholder = "First Name" [(ngModel)]="firstName" name="firstName"></ion-input><br>
+    <ion-input type="text" placeholder = "Last Name" [(ngModel)]="lastName" name="lastName"></ion-input><br>
+    <ion-input type="text" placeholder = "Cell Phone" [(ngModel)]="cellPhone" name="cellPhone"></ion-input><br>
+    <ion-input type="text" placeholder = "Email" [(ngModel)]="email" name="email"></ion-input><br>  
+    <ion-input type="password" placeholder = "Password" [(ngModel)]="password" name="password"></ion-input>
+
+    <ion-button (click)="submit()">Submit</ion-button>
+</form>
+</ion-content>

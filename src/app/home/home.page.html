@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Login
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form class = "box">
+  
+    <ion-input type="text" placeholder = "Email" [(ngModel)]="email" name="email"></ion-input><br>
+    
+    <ion-input type="password" placeholder = "Password" [(ngModel)]="password" name="password"></ion-input>
+    
+      <input type="checkbox" checked="checked" name="remember"> Remember me <br>
+    
+    <ion-button (click)="login()">Login</ion-button>
+    <ion-button (click)="register()">Register</ion-button>
+    <!-- <ion-button (click)="getUsers()">Login</ion-button> -->
+    
+
+  <div class="container" style="background-color: white">
+    
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+</ion-content>

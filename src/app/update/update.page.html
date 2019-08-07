@@ -1,0 +1,17 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-title>Edit Rental</ion-title>
+      <ion-button (click)=back()>Back to Listings</ion-button>
+  
+    </ion-toolbar>
+  </ion-header>
+  
+  
+  <ion-content>
+      Property Title: <ion-input type=text [(ngModel)]="property.title"></ion-input><br>
+      Property Description: <ion-input type=text [(ngModel)]="property.description"></ion-input><br>
+      Property Location: <ion-input type=text [(ngModel)]="property.location"></ion-input><br>
+      Property PricePerNight: <ion-input type=text [(ngModel)]="property.pricePerNight"></ion-input><br>
+      Property img URL: <ion-input type=text [(ngModel)]="property.imgURL"></ion-input><br>
+      <ion-button (click)=save()>Save</ion-button>
+  </ion-content>
